@@ -15,4 +15,4 @@ bot.on('message', msg => {
   }
 });
 
-bot.login("NzUxMDQ3MjAzNzA2ODk2NDg0.X1DZNw.zUd0JErZLlkrVrLdgDt9nrkTOeo")
+bot.login("ТОКЕН")
