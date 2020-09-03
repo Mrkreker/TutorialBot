@@ -33,4 +33,4 @@ bot.on('message', msg => {
   }
 });
 
-bot.login("NzUxMDQ3MjAzNzA2ODk2NDg0.X1DZNw.n55ukAerlWMXOCmB7aL2w8ZuRt0")
+bot.login("ТОКЕН")
