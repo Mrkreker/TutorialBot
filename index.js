@@ -3,6 +3,24 @@ const bot = new discord.Client();
 
 bot.on("ready", async () => {
   console.log(`[BOT] Бот успешно запущен!`)
+  bot.user.setStatus(`idle`);
+  let statuses = [
+    `Тест`,
+    `Бот`
+  ]
+  setInterval(async () => {
+    const gencount = Math.floor(Math.random() * statuses.length)
+    const statusID = statuses[gencount];
+    if(gencount === 0){
+    bot.user.setActivity(statusID, {
+        type: "PLAYING"
+    })
+    } else {
+      bot.user.setActivity(statusID, {
+        type: "WATCHING"
+    })
+    }
+  }, 5000)
 });
 
 bot.on('message', msg => {
@@ -15,4 +33,4 @@ bot.on('message', msg => {
   }
 });
 
-bot.login("ТОКЕН")
+bot.login("NzUxMDQ3MjAzNzA2ODk2NDg0.X1DZNw.n55ukAerlWMXOCmB7aL2w8ZuRt0")
